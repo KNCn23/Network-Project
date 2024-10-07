@@ -1,0 +1,93 @@
+/* Genel Sayfa Stili */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #83a4d4, #b6fbff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Konteyner Stili */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Kart (Dynamic Island) Stili */
+.card, .chat-card {
+    width: 350px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover, .chat-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Başlık ve Buton Stili */
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.btn, .send-button {
+    width: 100%;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover, .send-button:hover {
+    background: #555;
+}
+
+/* Input Grubu ve Mesaj Alanı Stili */
+.input-group {
+    margin-bottom: 20px;
+}
+
+input[type="text"], .message-input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.message-container {
+    height: 400px;
+    overflow-y: scroll;
+    margin-bottom: 20px;
+}
+
+.message {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 10px;
+    background: #f1f1f1;
+    transition: background 0.3s ease;
+}
+
+.message:hover {
+    background: #e1e1e1;
+}

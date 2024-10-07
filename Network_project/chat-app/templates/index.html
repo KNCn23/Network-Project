@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Application</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+    <script src="{{ url_for('static', filename='client.js') }}"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="chat-card">
+            <div id="message-container" class="message-container"></div>
+            <div class="input-container">
+                <input type="text" id="message-input" placeholder="Type a message..." class="message-input">
+                <button id="send-button" class="send-button">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // HTML dosyasından kullanıcı adını almak
+        const username = "{{ username }}";
+        startChat(username);
+    </script>
+</body>
+</html>
